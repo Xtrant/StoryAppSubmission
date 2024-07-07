@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">StoryAppSubmission</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="title_email">Email</string>
+    <string name="title_password">Password</string>
+    <string name="title_name">Name</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="instruction_link">Register Here</string>
+    <string name="instruction_login">Don\'t have an account yet ?</string>
+    <string name="login_btn_title">login</string>
+    <string name="instruction_register">Already have an account ?</string>
+    <string name="instruction_link_register">Login Here</string>
+    <string name="iv_main">Iv_Main</string>
+    <string name="menu_1">Add Story</string>
+    <string name="menu_2">Logout</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload">Upload</string>
+    <string name="description">Description</string>
+    <string name="map">Map</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="rb_1">Upload With Location</string>
+    <string name="rb_2">Upload Without Location</string>
+    <string name="retry">coba lagi</string>
+</resources>

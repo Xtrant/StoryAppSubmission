@@ -1,0 +1,19 @@
+[
+  {
+    "featureType": "road",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#ffc800"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "stylers": [
+      {
+        "color": "#098ee1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/soft_pink"
+    tools:context=".view.auth.RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progressIndicator">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/soft_pink">
+
+                <ImageView
+                    android:id="@+id/iv_main"
+                    android:layout_width="220dp"
+                    android:layout_height="180dp"
+                    android:contentDescription="@string/iv_main"
+                    android:src="@drawable/logo_app"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ImageContrastCheck" />
+
+                <TextView
+                    android:id="@+id/tv_title_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0"
+                    android:text="@string/title_email"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/et_email"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/iv_main"
+                    tools:alpha="100" />
+
+                <TextView
+                    android:id="@+id/tv_title_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0"
+                    android:text="@string/title_name"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/et_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_email"
+                    tools:alpha="100" />
+
+                <TextView
+                    android:id="@+id/tv_title_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0"
+                    android:text="@string/title_password"
+                    android:textSize="21sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/et_pass"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_name"
+                    tools:alpha="100" />
+
+
+                <com.example.storyappsubmission.view.custom.CustomEditTextEmail
+                    android:id="@+id/et_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0"
+                    android:background="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/hint_email"
+                    android:minHeight="48dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:layout_constraintBottom_toTopOf="@id/tv_title_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title_email"
+                    tools:alpha="100"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+                <com.example.storyappsubmission.view.custom.CustomEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:alpha="0"
+                    android:background="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/hint_name"
+                    android:minHeight="48dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:layout_constraintBottom_toTopOf="@id/tv_title_password"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title_name"
+                    tools:alpha="100"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+                <com.example.storyappsubmission.view.custom.CustomEditTextPassword
+                    android:id="@+id/et_pass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:alpha="0"
+                    android:background="@color/white"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/custom_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_title_password"
+                    tools:alpha="100"
+                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+
+
+                <com.example.storyappsubmission.view.custom.CustomButtonRegister
+                    android:id="@+id/custom_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:alpha="0"
+                    android:enabled="false"
+                    app:layout_constraintBottom_toTopOf="@id/tv_instruction"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/et_pass"
+                    tools:alpha="100"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <TextView
+                    android:id="@+id/tv_instruction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginBottom="8dp"
+                    android:alpha="0"
+                    android:text="@string/instruction_register"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:alpha="100" />
+
+                <TextView
+                    android:id="@+id/tv_clickable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:alpha="0"
+                    android:text="@string/instruction_link_register"
+                    android:textColor="#FF6750A4"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.03"
+                    app:layout_constraintStart_toEndOf="@+id/tv_instruction"
+                    tools:alpha="100" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
