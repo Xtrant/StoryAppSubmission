@@ -1,0 +1,1 @@
+App created to pass the test in Android Intermediate in Dicoding. This App focus in Using Integration an API with Authentication and Upload Feature. Beside that, this app using Google Maps API, datastore for save session, and paging
